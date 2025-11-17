@@ -307,3 +307,51 @@ td.pub_td1 img
 table.pub_table tr {
   /*outline: thin dotted #666666;*/
 }
+
+/* 年份分组行样式 */
+table.pub_table .year-row .year-cell {
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    background-color: #faf7fb;      /* 很浅的淡紫背景，可根据喜好调整 */
+}
+
+table.pub_table .year-text {
+    font-weight: bold;
+    font-size: 1.05em;
+    letter-spacing: 0.12em;
+    color: #9D849A;                  /* 和你上面导航链接的颜色统一 */
+    text-transform: uppercase;
+}
+
+table.pub_table .year-line {
+    display: inline-block;
+    width: 60px;
+    border-top: 1px solid #d8cfe0;   /* 细分割线 */
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+/* Section Title (e.g., Conference, Preprint) */
+.sec-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    color: #6b4d69;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.sec-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 80%;
+    background: #9D849A;
+    border-radius: 2px;
+}
+
